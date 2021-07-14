@@ -1,0 +1,92 @@
+/* Declarando variaveis */
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos base*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color:#fff;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 8px;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 16px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/* div filme principal */
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.80)100%), url('/img/capavingadores.jpg');
+    height: 416px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.titulo{
+    margin-top: 20%;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+    padding: 16px 16px;
+    margin-right: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: #fff;
+    color: var(--preto);
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 24px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+
+
+/* carrosel imagens */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 8px;
+}
